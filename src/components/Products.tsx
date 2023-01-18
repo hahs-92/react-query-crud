@@ -12,6 +12,7 @@ export function Products() {
   } = useQuery({
     queryKey: ["products"],
     queryFn: getProducts,
+    select: (products) => products.sort((a, b) => b.id! - a.id!),
   });
 
   if (isLoading) {

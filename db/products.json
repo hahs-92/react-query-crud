@@ -27,6 +27,97 @@
       "description": "asdasdad new",
       "inStock": true,
       "id": 4
+    },
+    {
+      "name": "tv",
+      "price": "677",
+      "description": "this is a test",
+      "inStock": true,
+      "id": 5
+    },
+    {
+      "name": "play",
+      "price": "56",
+      "description": "this is a console",
+      "inStock": true,
+      "id": 6
+    },
+    {
+      "name": "radio",
+      "price": "800",
+      "description": "Another description",
+      "inStock": true,
+      "id": 7
+    },
+    {
+      "name": "mouse",
+      "price": "200",
+      "description": "Another description",
+      "inStock": true,
+      "id": 8
+    },
+    {
+      "name": "telephone",
+      "price": "200",
+      "description": "Another description",
+      "inStock": true,
+      "id": 9
+    },
+    {
+      "name": "screen",
+      "price": "1000",
+      "description": "this is a test",
+      "inStock": true,
+      "id": 10
+    },
+    {
+      "name": "chair",
+      "price": "546",
+      "description": "this is a test",
+      "inStock": true,
+      "id": 11
+    },
+    {
+      "name": "table",
+      "price": "600",
+      "description": "this is a test",
+      "inStock": true,
+      "id": 12
+    },
+    {
+      "name": "keyboard",
+      "price": "300",
+      "description": "this is a test",
+      "inStock": true,
+      "id": 13
+    },
+    {
+      "name": "Fridge",
+      "price": "500",
+      "description": "this is a test",
+      "inStock": true,
+      "id": 14
+    },
+    {
+      "name": "TV2",
+      "price": "470",
+      "description": "this is a tv",
+      "inStock": true,
+      "id": 15
+    },
+    {
+      "name": "xbox",
+      "price": "650",
+      "description": "this is a console",
+      "inStock": true,
+      "id": 16
+    },
+    {
+      "name": "wii",
+      "price": "450",
+      "description": "this is a console",
+      "inStock": true,
+      "id": 17
     }
   ]
 }
