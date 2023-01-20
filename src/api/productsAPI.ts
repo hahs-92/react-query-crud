@@ -13,3 +13,8 @@ export const getProducts = async () => {
 export const createProduct = async (product: IProduct) => {
   productsApi.post("/", product);
 };
+
+export const deleteProduct = async (productId: string) => {
+  console.log({ productId });
+  productsApi.delete(`/${productId}`);
+};
