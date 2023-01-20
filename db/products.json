@@ -15,13 +15,6 @@
       "id": 2
     },
     {
-      "name": "adsad",
-      "price": "12123",
-      "description": "asdasdad",
-      "inStock": true,
-      "id": 3
-    },
-    {
       "name": "new",
       "price": "12321",
       "description": "asdasdad new",
@@ -74,14 +67,14 @@
       "name": "chair",
       "price": "546",
       "description": "this is a test",
-      "inStock": true,
+      "inStock": false,
       "id": 11
     },
     {
       "name": "table",
       "price": "600",
       "description": "this is a test",
-      "inStock": true,
+      "inStock": false,
       "id": 12
     },
     {
@@ -95,8 +88,15 @@
       "name": "Tv2",
       "price": "700",
       "description": "jumm",
-      "inStock": false,
+      "inStock": true,
       "id": 14
+    },
+    {
+      "name": "mouse",
+      "price": "300",
+      "description": "testing",
+      "inStock": true,
+      "id": 15
     }
   ]
 }

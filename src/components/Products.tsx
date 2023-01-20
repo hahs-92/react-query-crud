@@ -2,7 +2,6 @@ import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 
 import { getProducts, deleteProduct, updateProduct } from "../api/productsAPI";
 import { Product } from "./Product/Product";
-import { IProduct } from "../models/Product";
 
 export function Products() {
   // nos permite interactuar con el contexto
