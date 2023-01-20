@@ -88,14 +88,14 @@
       "name": "keyboard",
       "price": "300",
       "description": "this is a test",
-      "inStock": true,
+      "inStock": false,
       "id": 13
     },
     {
       "name": "Tv2",
       "price": "700",
       "description": "jumm",
-      "inStock": true,
+      "inStock": false,
       "id": 14
     }
   ]

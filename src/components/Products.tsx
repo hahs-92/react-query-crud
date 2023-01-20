@@ -1,7 +1,8 @@
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 
-import { getProducts, deleteProduct } from "../api/productsAPI";
+import { getProducts, deleteProduct, updateProduct } from "../api/productsAPI";
 import { Product } from "./Product/Product";
+import { IProduct } from "../models/Product";
 
 export function Products() {
   // nos permite interactuar con el contexto
@@ -28,6 +29,17 @@ export function Products() {
     },
   });
 
+  const updateProductMutation = useMutation({
+    mutationFn: updateProduct,
+    onSuccess: () => {
+      console.log("success¡¡");
+      // elimina cache, para que se muestren los nuevos products
+      // e indicamos que key que usamos en Products para
+      // el fecth
+      queryClient.invalidateQueries({ queryKey: ["products"] });
+    },
+  });
+
   if (isLoading) {
     return <span>Loading...</span>;
   } else if (isError) {
@@ -43,6 +55,7 @@ export function Products() {
             key={p.id}
             product={p}
             deleteProduct={deleteProductMutation.mutate}
+            updateProduct={updateProductMutation.mutate}
           />
         ))}
     </section>

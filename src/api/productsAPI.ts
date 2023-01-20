@@ -1,5 +1,6 @@
 import axios from "axios";
 import { IProduct } from "../models/Product";
+import { Product } from "../components/Product/Product";
 
 const productsApi = axios.create({
   baseURL: "http://localhost:3000/products",
@@ -15,6 +16,9 @@ export const createProduct = async (product: IProduct) => {
 };
 
 export const deleteProduct = async (productId: string) => {
-  console.log({ productId });
   productsApi.delete(`/${productId}`);
+};
+
+export const updateProduct = async (product: IProduct) => {
+  productsApi.put(`/${product.id}`, product);
 };
